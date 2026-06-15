@@ -3,7 +3,7 @@ import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import axios from 'axios'
 
-const API_BASE = 'https://sisacad-enrollments-backend.vercel.app'
+const API_URL = '/api/enrollment-certificate/'
 
 const route = useRoute()
 const student = ref(null)
@@ -33,7 +33,7 @@ async function fetchEnrollments(cui) {
   enrollments.value = []
 
   try {
-    const { data } = await axios.get(`${API_BASE}/restful/enrollment-certificate/`, {
+    const { data } = await axios.get(API_URL, {
       params: { cui },
     })
 
