@@ -135,7 +135,7 @@ watch(() => route.params.cui, (newCui) => {
         <footer class="footer">
           <p><strong>Total de cursos matriculados:</strong> {{ totalCourses }}</p>
           <p class="digital-sign">
-            Documento generado digitalmente por el Sistema de Matrícula de Laboratorio EPIS.
+            Documento generado digitalmente por Josue Enrique Camero Elguera.
           </p>
         </footer>
       </template>
